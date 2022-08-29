@@ -1,0 +1,680 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ------------------------  Header ------------------------  */
+header {
+    width: 100%;
+    min-width: 238px;
+    height: 120px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    display: fixed;
+  }
+  /* ------------------------  Header: logo -----------------  */
+  .logo {
+    float: left;
+    width: 215px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  /* ------------------------  Header: pesquisa -------------  */
+  .contentP {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    top: 20px;
+    right: 160px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+  }
+  .contentP.active {
+    width: 300px;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.75s;
+  }
+  .contentP .userP {
+    position: relative;
+    width: 0px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .contentP.active .userP {
+    outline: none;
+    padding: 0 0 0 10px;
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+  }
+  .contentP .userP input {
+    white-space: nowrap;
+    color: #555;
+    font-size: 1.1em;
+  }
+  .contentP .menuP {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+  }
+  /* ------------------------  Header: menu ----------------- */ 
+  .contentM {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+    background: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+  }
+  .contentM.active {
+    width: 300px;
+    height: 380px;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.75s;
+    z-index: 1;
+  }
+  .contentM .userM {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .contentM.active .userM {
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+  }
+  .contentM .userM .username {
+    white-space: nowrap;
+    color: #555;
+    font-size: 1.1em;
+  }
+  .contentM .userM .imgM {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 10px solid #fff;
+  }
+  .contentM .userM .imgM img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contentM .menuM {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .contentM .menuM::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #555;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #555;
+    transition: 0.5s;
+  }
+  .contentM .menuM::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #555;
+    transform: translateY(10px);
+    transition: 0.5s;
+  }
+  .contentM.active .menuM::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #555;
+  }
+  .contentM.active .menuM::after {
+    transform: translateY(0px) rotate(-45deg);
+  }
+  .menu {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .menu li {
+    list-style: none;
+  }
+  .menu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 1em;
+    text-decoration: none;
+    color: #555;
+  }
+  .menu li a:hover {
+    color: #000;
+  }
+  .menu li a ion-icon {
+    font-size: 1.5em;
+  }
+
+#logo {
+    float: left;
+    width: 15%;
+    height: 25%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+}
+
+#perfila {
+    float: right;
+    width: 15%;
+    height: 47%;
+    margin-right: 8px;
+    margin-top: 45px;
+    border: 1px solid #000000;
+}
+
+main {
+    width: 100%;
+    /*border: 1px solid #000000;*/
+    height: 800px;
+    background: linear-gradient(287.56deg, #437de2 0%, #16f9c1 100%);
+}
+
+body{
+    background: linear-gradient(287.56deg, #437de2 0%, #16f9c1 100%);
+}
+
+#suporteconta {
+    width: 20%;
+    height: 400px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-top: 5%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: aliceblue;
+}
+
+#sctitulo {
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2px;
+    
+}
+
+.sctexto {
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3px;
+    margin-right: 3px;
+    
+}
+
+#cecrtificadodedscontos {
+    width: 40%;
+    height: 400px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 9.5%;
+    margin-right: 5%;
+    float: left;
+    background-color: aliceblue;
+}
+
+#scdtitulo {
+    font-size: 17pt;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.scdtexto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#cursoeprazos {
+    width: 20%;
+    height: 400px;
+    border: 1px solid #000000;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: right;
+    background-color: aliceblue;
+}
+
+#cptitulo {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.cptexto {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+    width: 100%;
+    height: 40vh;
+    border: 0px solid #000000;
+    float: left;
+    margin-top: 10px;
+}
+
+#section1 {
+    width: 98%;
+    height: 37vh;
+    /*border: 1px solid #000000;*/
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#section2 {
+    width: 25%;
+    height: 35vh;
+    border: 1px solid #000000;
+    float: left;
+    margin-top: 0.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#section3 {
+    width: 25%;
+    height: 35vh;
+    border: 1px solid #000000;
+    float: left;
+    margin-top: 0.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/*.nome {
+    width: 90%;
+    height: 20px;
+    border: 1px solid #000000;
+    margin-top: 5vh;
+    margin-left: 4.5%;
+    margin-right: 1%;
+    float: left;
+    background-color: aliceblue;
+}
+
+.sobrenome {
+    width: 90%;
+    height: 20px;
+    border: 1px solid #000000;
+    margin-top: 8vh;
+    margin-left: 4.5%;
+    margin-right: 1%;
+    background-color: aliceblue;
+}
+
+.cpf {
+    width: 90%;
+    height: 20px;
+    border: 1px solid #000000;
+    margin-top: 8vh;
+    margin-left: 4.5%;
+    margin-right: 1%;
+    float: left;
+    background-color: aliceblue;
+}
+
+
+
+.tel {
+    width: 90%;
+    height: 20px;
+    border: 1px solid #000000;
+    margin-top: 5vh;
+    margin-left: 4.5%;
+    margin-right: 1%;
+    float: left;
+    background-color: aliceblue;
+}
+
+.mail {
+    width: 90%;
+    height: 20px;
+    border: 1px solid #000000;
+    margin-top: 7.9vh;
+    margin-left: 4.5%;
+    margin-right: 1%;
+    float: left;
+    background-color: aliceblue;
+}
+
+.instituicao {
+    width: 90%;
+    height: 20px;
+    border: 1px solid #000000;
+    margin-top: 7.4vh;
+    margin-left: 4.5%;
+    margin-right: 1%;
+    float: left;
+    background-color: aliceblue;
+}*/
+
+#duvida {
+    width: 20%;
+    height: 35vh;
+    /*border: 1px solid #000000;*/
+    float: right;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    background-color: transparent;
+}
+
+#dtexto {
+    font-size: x-large;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    margin-top: 32%;
+    margin-left: 1%;
+}
+
+#nossasredes {
+    width: 20%;
+    height: 35vh;
+    border: 1px solid #000;
+    margin-top: 0.5%;
+    margin-right: 23%;
+    margin-left: 56%;
+    background-color: aliceblue;
+}
+
+#logoredes{
+    font-size: x-large;
+    margin-top: 7%;
+    float: left;
+    margin-left: 6%;
+}
+
+form{
+    float: left;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+input[type="text"]{
+    
+    color: #000;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    width: 400px;
+}
+
+input[type="email"]{
+    
+    width: 96%;
+    height: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    margin-top: 1vh;
+    margin-right: 1%;
+    float: left;
+    background-color: transparent;
+
+}
+input[type="email"]:focus{
+  outline: none;
+}
+
+textarea{
+   
+    width: 350px;
+    height: 100px;
+    resize: none;
+    border: 1px solid #000;
+    outline: none;
+    background-color: transparent;
+    color: #FFF;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 48%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 80.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+    @media screen and (max-width: 930px) {
+        
+        #perfila {
+            float: right;
+            width: 15%;
+            height: 47%;
+            margin-right: 8px;
+            margin-top: 45px;
+            border: 1px solid #000000;
+        }
+
+        main {
+            width: 100%;
+            /*border: 1px solid #000000;*/
+            background: linear-gradient(287.56deg, #437de2 0%, #16f9c1 100%);
+            height: 1600px;
+        }
+        
+        #suporteconta {
+            width: 98%;
+            height: 60vh;
+            /*border: 1px solid #000000;*/
+            float: left;
+            margin-top: 10px;
+            margin-left: 1%;
+            margin-right: 5%;
+        }
+        
+        #cecrtificadodedscontos {
+            width: 98%;
+            height: 70vh;
+            border: 1px solid #FFF;
+            float: left;
+            margin-top: 10px;
+            margin-left: 1%;
+            margin-right: 5%;
+        }
+        
+        #cursoeprazos {
+            width: 98%;
+            height: 40vh;
+            border: 1px solid #000000;
+            float: left;
+            margin-top: 10px;
+            margin-left: 1%;
+            margin-right: 5%;
+        }
+        
+        article {
+            width: 100%;
+            height: 150vh;
+            border: 0px solid #000000;
+            float: left;
+            margin-top: 10px;
+        }
+        
+        #section1 {
+            width: 98%;
+            height: 148vh;
+            /*border: 1px solid #000000;*/
+            float: left;
+            margin-top: 10px;
+            margin-left: 1%;
+            margin-right: 5%;
+        }
+        
+        #section2 {
+            width: 90%;
+            height: 35vh;
+            border: 1px solid #000000;
+            float: left;
+            margin-top: 0.5%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+        #section3 {
+            width: 90%;
+            height: 35vh;
+            border: 1px solid #000000;
+            float: left;
+            margin-top: 0.5%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+        #nome {
+            width: 90%;
+            height: 20px;
+            border: 1px solid #000000;
+            margin-top: 5vh;
+            margin-right: 1%;
+            float: left;
+        }
+        
+        #sobrenome {
+            width: 90%;
+            height: 20px;
+            border: 1px solid #000000;
+            margin-top: 8vh;
+            margin-left: 4.5%;
+            margin-right: 1%;
+        }
+        
+        #cpf {
+            width: 90%;
+            height: 20px;
+            border: 1px solid #000000;
+            margin-top: 8vh;
+            margin-left: 4.5%;
+            margin-right: 1%;
+            float: left;
+        }
+        
+        
+        
+        #tel {
+            width: 90%;
+            height: 20px;
+            border: 1px solid #000000;
+            margin-top: 6vh;
+            margin-left: 4.5%;
+            margin-right: 1%;
+            float: left;
+        }
+        
+        #mail {
+            width: 90%;
+            height: 20px;
+            border: 1px solid #000000;
+            margin-top: 9vh;
+            margin-left: 4.5%;
+            margin-right: 1%;
+        }
+        
+        #instituicao {
+            width: 90%;
+            height: 20px;
+            border: 1px solid #000000;
+            margin-top: 9vh;
+            margin-left: 4.5%;
+            margin-right: 1%;
+            float: left;
+        }
+        
+        #duvida {
+            width: 90%;
+            height: 35vh;
+            /*border: 1px solid #000000;*/
+            float: right;
+            margin-right: 5%;
+            margin-left: 5%;
+            margin-top: 0.5%;
+            margin-bottom: 0.5%;
+        }
+        
+        #nossasredes {
+            width: 90%;
+            height: 35vh;
+            border: 1px solid #000000;
+            margin-top: 1%;
+            margin-right: 5.1%;
+            margin-left: 4.9%;
+            clear: both;
+        }
+        
+    }

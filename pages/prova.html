@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Prova Final </title>
+
+        <link rel="stylesheet" href="../css/prova.css">
+        <!--<script src="JS/prova.js"></script>-->
+
+
+
+        <link rel="icon" href="../img/logo.png">
+    </head>
+
+    <body>
+        <header>
+            <section class="logo">
+                <img src="../img/logotipoM.png" alt="Logo">
+            </section>
+    
+            <section class="contentP">
+                <section class="userP">
+                    <input class="inputP" type="text" placeholder="Search">
+                </section>
+                <section class="menuP">
+                    <ion-icon name="search"></ion-icon>
+                </section>
+            </section>
+    
+            <section class="contentM">
+                <section class="userM">
+                    <section class="imgM">
+                        <img src="../img/programmer.png" alt="User_Imagem">
+                    </section>
+                    <p class="username">Ianes Tech</p>
+                </section>
+                <section class="menuM"></section>
+                <ul class="menu">
+                    <li onclick="home()"><a href="#"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+                    <li onclick="MeuPerfil()"><a href="#"><ion-icon name="person-outline"></ion-icon> Meu Perfil</a></li>
+                    <li onclick="cursos()"><a href="#"><ion-icon name="book-outline"></ion-icon> Cursos</a></li>
+                    <li onclick="contato()"><a href="#"><ion-icon name="call-outline"></ion-icon> Contato / Quem Somos</a></li>
+                    <li onclick="Ajuda()"><a href="#"><ion-icon name="help-outline"></ion-icon> Ajuda</a></li>
+                    <li onclick="logout()"><a href="#"><ion-icon name="log-out-outline"></ion-icon> Logout</a></li>
+                </ul>
+            </section>
+        </header>
+
+        
+
+        <main>
+
+            <section id="title" class="col-4">
+                <h1>PROVA DE HTML E CSS</h1>
+            </section>
+
+            <form action="">
+
+                <section class="col-4 quest">
+
+                    <p><b>1) Qual a forma correta de se criar uma lista?</b></p>
+
+                    <br>
+
+                    <label><input type="radio" id="resp1" name="quest1" value="A" required>-list-  -item-  -/item-  -/list- </label> 
+                    <label><input type="radio" id="resp2" name="quest1" value="B" required>-li-  -item-  -/item-  -/li- </label>
+                    <label><input type="radio" id="resp3" name="quest1" value="C" required class="certa">-ul-  -li-  -/li-  -/ul- </label>
+                    <label><input type="radio" id="resp4" name="quest1" value="D" required>Nenhuma das alternativas</label>
+
+                </section>
+                
+                <section class="col-4 quest">
+                    <p><b>2) Como devemos chamar um script css? </b></p>
+
+                    <br>
+
+                    <label><input type="radio"  id="resp5" name="quest2" value="A" required class="certa">-link rel="stylesheet" href="link css-</label> 
+                    <label><input type="radio"  id="resp6" name="quest2" value="B" required>-a href="link css"--/a-</label>
+                    <label><input type="radio"  id="resp7" name="quest2" value="C" required>-script href="link css"-</script></label>
+                    <label><input type="radio"  id="resp8" name="quest2" value="D" required>Nenhuma das alternativas</label>
+
+                </section>
+
+                <section class="col-4 quest">
+                    <p><b>3) Qual Tag abaixo pertence ao HTML? </b></p>
+
+                    <br>
+
+                    <label><input type="radio" id="resp9" name="quest3" value="A" required>super</label> 
+                    <label><input type="radio" id="resp10" name="quest3" value="B" required>weight</label>
+                    <label><input type="radio" id="resp11" name="quest3" value="C" required class="certa">sup</label>
+                    <label><input type="radio" id="resp12" name="quest3" value="D" required>SuS</label>
+
+                </section>
+
+                <section class="col-4 quest">
+                    <h3>4) Qual a forma correta de se criar um link?</h3>
+
+                    <br>
+
+                    <label> <input type="radio" id="resp13" name="quest4" value="A" required class="certa">-span href="link"-Link aqui-/span-</label>
+                    <label> <input type="radio" id="resp14" name="quest4" value="B" required>-a href="link"-link aqui-/a-</label>
+                    <label> <input type="radio" id="resp15" name="quest4" value="C" required>-link rel="Link" value="Link aqui"-</label>
+                    <label> <input type="radio" id="resp16" name="quest4" value="D" required>-criar "link" no html--criar-</label>
+                </section>
+
+                <section class="col-4 quest">
+                    <h3>5) Qual atributo abaixo não pertence a tag -a-?</h3>
+
+                    <br>
+
+                    <label> <input type="radio" id="resp17" name="quest5" value="A" required>src=""</label>
+                    <label> <input type="radio" id="resp18" name="quest5" value="B" required class="certa">target=""</label>
+                    <label> <input type="radio" id="resp19" name="quest5" value="C" required>title=""</label>
+                    <label> <input type="radio" id="resp20" name="quest5" value="D" required>color""</label>
+                </section>
+
+                <section class="col-4 quest">
+                    <h3>6) Qual tag abaixo pertence a um menu de navegação?</h3>
+
+                    <br>
+
+                    <label> <input type="radio" id="resp21" name="quest6" value="A" required>-nav--/nav-</label>
+                    <label> <input type="radio" id="resp22" name="quest6" value="B" required>-item--/item-</label>
+                    <label> <input type="radio" id="resp23" name="quest6" value="C" required class="certa">-menu-item--/menu-item-</label>
+                    <label> <input type="radio" id="resp24" name="quest6" value="D" required>Nenhuma das alternativas</label>
+                </section>
+
+                <section class="col-4 quest">
+                    <h3>7) Qual é o HTML correto para se referir a uma folha de estilos externa?</h3>
+
+                    <br>
+
+                    <label> <input type="radio" id="resp25" name="quest7" value="A" required class="certa">-link rel="stylesheet" type="text/css" href="mystyle.css"-</label>
+                    <label> <input type="radio" id="resp26" name="quest7" value="B" required>stylesheet>mystyle.css-/stylesheet-</label>
+                    <label> <input type="radio" id="resp27" name="quest7" value="C" required>-style src="mystyle.css"--/style-</label>
+                    <label> <input type="radio" id="resp28" name="quest7" value="D" required>Nenhum das alternativas</label>
+                </section>
+
+                <section class="col-4 quest">
+                    <h3>8) Qual é a sintaxe CSS correta?</h3>
+
+                    <br>
+
+                    <label> <input type="radio" id="resp29" name="quest8" value="A" required>{body:color=black;}</label>
+                    <label> <input type="radio" id="resp30" name="quest8" value="B" required>{body;color:black;}</label>
+                    <label> <input type="radio" id="resp31" name="quest8" value="C" required class="certa">body {color: black;}</label>
+                    <label> <input type="radio" id="resp32" name="quest8" value="D" required>Nenhum das alternativas</label>
+                </section>
+
+                <section class="col-4 quest">
+                    <h3>9) Qual propriedade é usada para alterar a cor do plano de fundo no HTML?</h3>
+
+                    <br>
+
+                    <label> <input type="radio" id="resp33" name="quest9" value="A" required>color</label>
+                    <label> <input type="radio" id="resp34" name="quest9" value="B" required>bgcolor</label>
+                    <label> <input type="radio" id="resp35" name="quest9" value="C" required class="certa">background-color</label>
+                    <label> <input type="radio" id="resp36" name="quest9" value="D" required>voddolor</label>
+                </section>
+
+                <section class="col-4 quest">
+                    <h3>10) Qual propriedade CSS controla o tamanho do texto?</h3>
+
+                    <br>
+
+                    <label> <input type="radio" id="resp37" name="quest10" value="A" required>text-style</label>
+                    <label> <input type="radio" id="resp38" name="quest10" value="B" required>text-size</label>
+                    <label> <input type="radio" id="resp39" name="quest10" value="C" required class="certa">font-size</label>
+                    <label> <input type="radio" id="resp40" name="quest10" value="D" required>Nenhum das alternativas</label>
+                </section>
+
+                <section class="col-4 quest">
+                    <h3>11) Como você faz uma lista com seus itens quadrados?</h3>
+
+                    <br>
+
+                    <label> <input type="radio" id="resp41" name="quest11" value="A" required>list-type: square;</label>
+                    <label> <input type="radio" id="resp42" name="quest11" value="B" required>list: square;</label>
+                    <label> <input type="radio" id="resp43" name="quest11" value="C" required class="certa">list-style-type: square;</label>
+                    <label> <input type="radio" id="resp44" name="quest11" value="D" required>Nenhum das alternativas</label>
+                </section>
+
+                <section class="col-4 quest">
+                    <h3>12) Como posicionar um texto (lado esquerdo) ao lado de uma imagem (lado direito)?</h3>
+
+                    <br>
+
+                    <label> <input type="radio" id="resp45" name="quest12" value="A" required>left: 50% e right: 50%, respectivamente</label>
+                    <label> <input type="radio" id="resp46" name="quest12" value="B" required class="certa">float: left e float: right, respectivamente</label>
+                    <label> <input type="radio" id="resp47" name="quest12" value="C" required>position: left e position: right, respectivamente</label>
+                    <label> <input type="radio" id="resp48" name="quest12" value="D" required>Nenhum das alternativas</label>
+                </section>
+
+                <div>
+                    <button class="enviar" onclick="enviarProva()"> ENVIAR </button>
+                </div>
+
+            </form>
+
+
+        </main>
+                            <!-- -------------------------------- Sessão Importação de blibliotecas -------------------------------- -->
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+
+    <script>
+
+        tentativas = JSON.parse(localStorage.getItem("tentativas"));
+        if (tentativas == null) {
+            tentativas = 0;
+        }
+        tentativas = parseInt(tentativas)
+        tentativas = tentativas + 1;
+        if (tentativas > 3) {
+            alert("Você excedeu a quantidade de tentativas!");
+            window.location = "./menu.html" ;
+        } else {
+            localStorage.setItem("tentativas", tentativas)
+        }
+    
+    
+        corretas = 0;
+        var respostas = document.querySelectorAll("input[type=radio]");
+        function verificarResposta(e) {
+            if(e.target.classList.contains("certa")) {
+                corretas++;
+            }
+        }
+        for(let i =0;i<respostas.length;i++) {
+            respostas[i].addEventListener("click", verificarResposta);
+        }
+    
+        function enviarProva() {
+            if(corretas >= 8) {
+                window.location = "./certificado.html";
+                alert('Você conseguiu, seu certificado foi gerado e baixado.')
+            } else {
+                alert("Você tem mais uma chance, acerte 70% das questões para conseguir seu certificado!");
+                window.location = "prova.html"
+            }
+        }
+
+        let menuM = document.querySelector('.menuM')
+let contentM = document.querySelector('.contentM')
+
+menuM.onclick = function() {
+    contentM.classList.toggle('active')
+}
+
+function logout() {
+  localStorage.setItem('id_login', "")
+  const time = setTimeout(abrir, 800)
+    function abrir(){
+    window.location = '../index.html'
+  }
+}
+
+function home() {
+  const time = setTimeout(abrir, 800)
+    function abrir(){
+    window.location = './menu.html'
+  }
+}
+
+function contato() {
+  const time = setTimeout(abrir, 800)
+    function abrir(){
+    window.location = './menu.html#Contato/QuemSomos'
+  }
+}
+
+function cursos() {
+  const time = setTimeout(abrir, 800)
+    function abrir(){
+    window.location = './menu.html#MeusCursos'
+  }
+}
+
+function MeuPerfil() {
+  const time = setTimeout(abrir, 800)
+    function abrir(){
+    window.location = './perfil.html'
+  }
+}
+
+function Ajuda() {
+    const time = setTimeout(abrir, 800)
+      function abrir(){
+      window.location = './suporte.html'
+    }
+  }
+
+let menuP = document.querySelector('.menuP')
+let contentP = document.querySelector('.contentP')
+
+menuP.onclick = function() {
+    contentP.classList.toggle('active')
+}
+
+window.onload = () => {
+    let id = localStorage.getItem('id_login')
+    let dados = localStorage.getItem(id)
+    let user = JSON.parse(dados)
+
+    let username = user.nome_
+    document.querySelector('.username').innerHTML = username
+}
+    
+    </script>
+
+</html>

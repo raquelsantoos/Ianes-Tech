@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil do Aluno - IANES Tech</title>
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <script defer src="../js/perfil.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <img src="../img/logotipoM.png" alt="Logo">
+        </section>
+
+        <section class="contentP">
+            <section class="userP">
+                <input class="inputP" type="text" placeholder="Search">
+            </section>
+            <section class="menuP">
+                <ion-icon name="search"></ion-icon>
+            </section>
+        </section>
+
+        <section class="contentM">
+            <section class="userM">
+                <section class="imgM">
+                    <img src="../img/programmer.png" alt="User_Imagem">
+                </section>
+                <p class="username">Ianes Tech</p>
+            </section>
+            <section class="menuM"></section>
+            <ul class="menu">
+                <li onclick="home()"><a href="#"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+                <li onclick="MeuPerfil()"><a href="#"><ion-icon name="person-outline"></ion-icon> Meu Perfil</a></li>
+                <li onclick="cursos()"><a href="#"><ion-icon name="book-outline"></ion-icon> Cursos</a></li>
+                <li onclick="contato()"><a href="#"><ion-icon name="call-outline"></ion-icon> Contato / Quem Somos</a></li>
+                <li onclick="Ajuda()"><a href="#"><ion-icon name="help-outline"></ion-icon> Ajuda</a></li>
+                <li onclick="logout()"><a href="#"><ion-icon name="log-out-outline"></ion-icon> Logout</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <section class="Card">
+            <section class="imagem">
+                <img src="../img/programmer.png" alt="">
+            </section>
+                <h2 class="user">Usuário</h2>
+                <button onclick="logout()">Logout</button>
+        </section>
+        <section class="alterDados">
+            <form action="#">
+                <label for="_nome">Nome: </label>
+                <input type="text" class="_nome" id="_nome" name="_nome" placeholder=" Digite seu nome completo"/>
+                <label for="_email">E-mail: </label>
+                <input type="email" class="_email" id="_email" name="_email" placeholder=" Digite seu E-mail"/>
+                <label for="_telefone">Telefone: </label>
+                <input type="tel" class="_telefone" id="_telefone" name="_telefone" placeholder=" Digite seu Telefone" maxlength="15"/>
+                <label for="_cpf">CPF: </label>
+                <input type="text" class="_cpf" id="_cpf" name="_cpf" placeholder=" Digite seu CPF" maxlength="14"/>
+                <label for="_senha">Senha: </label>
+                <input type="password" class="_senha" id="_senha" name="_senha" placeholder=" Digite uma senha (mínimo 4 caracteres)" minlength="4"/>
+                <label for="_senha">Confirme sua senha: </label>
+                <input type="password" class="conf_senha" id="conf_senha" name="conf_senha" placeholder=" Digite novamente sua senha" minlength="4"/>
+            </form>
+                <section class="btns">
+                    <button onclick="resetDados()">Resetar dados</button>
+                    <button onclick="salvarDados()">Salvar dados</button>
+                </section>
+        </section>
+    </main>
+
+    <!-- -------------------------------- Sessão Importação de blibliotecas -------------------------------- -->
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Suporte | IANES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/suporte.css'>
+    <script defer src="../js/suporte.js"></script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="../img/logotipoM.png" alt="Logo">
+        </section>
+
+        <section class="contentP">
+            <section class="userP">
+                <input class="inputP" type="text" placeholder="Search">
+            </section>
+            <section class="menuP">
+                <ion-icon name="search"></ion-icon>
+            </section>
+        </section>
+
+        <section class="contentM">
+            <section class="userM">
+                <section class="imgM">
+                    <img src="../img/programmer.png" alt="User_Imagem">
+                </section>
+                <p class="username">Ianes Tech</p>
+            </section>
+            <section class="menuM"></section>
+            <ul class="menu">
+                <li onclick="home()"><a href="#"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+                <li onclick="MeuPerfil()"><a href="#"><ion-icon name="person-outline"></ion-icon> Meu Perfil</a></li>
+                <li onclick="cursos()"><a href="#"><ion-icon name="book-outline"></ion-icon> Cursos</a></li>
+                <li onclick="contato()"><a href="#"><ion-icon name="call-outline"></ion-icon> Contato / Quem Somos</a></li>
+                <li onclick="Ajuda()"><a href="#"><ion-icon name="help-outline"></ion-icon> Ajuda</a></li>
+                <li onclick="logout()"><a href="#"><ion-icon name="log-out-outline"></ion-icon> Logout</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <section id="suporteconta"><p id="sctitulo"><strong> Suporte </strong></p><br/>
+        <p class="sctexto"><i> Quero alterar minha senha, O que faço? </i></p><br/>
+        <p class="sctexto"> Para alterar as informações de sua conta, entre em seu perfil e lá haverá um campo para alterações. </p><br/><br/>
+        <p class="sctexto"><i> Como posso conseguir o certificado? </i></p><br/>
+        <p class="sctexto"> É necessário ser cadastrado e ter feito todas as aulas e provas do curso escolhido. </p><br/><br/>
+        <p class="sctexto"><i> Quanto tempo eu tenho para fazer os cursos? </i></p><br/>
+        <p class="sctexto"> Não existe prazo para conclusão, ele é determinado pelo seu tempo disponível.</p><br/>
+        </section>
+
+
+        <section id="cecrtificadodedscontos"><p id="scdtitulo"><strong> Entre em contato conosco: </strong></p><br/>
+        <!--<p class="scdtexto">Como posso conseguir o certificado?</p><br>
+        <p class="scdtexto">Para conseguir o certificado e necessário
+                            que você tenha que fazer todas as aulas e provas necessárias para reivindicar
+                            o certificado</p><br>
+        <p class="scdtexto">Como posso conseguir um desconto?</p><br>
+        <p class="scdtexto">Uma forma de conseguir desconto e comprando outros curso </p>-->
+        <br/>
+        <form>
+        <label> Nome Completo: <font color="red">*</font></label>
+        <input type="text" id="nome" name="nome"/>
+        <br/><br/>
+
+        <label> Digite seu e-mail: <font color="red">*</font></label>
+        <input type="email" id="e-mail" name="e-mail" required />
+        <br/><br/>
+
+        <label><br/> Deixe um comentário: <font color="red">*</font></label><br/><br/><br/>
+        <textarea maxlength="240" placeholder="Máximo 240 caracteres" required></textarea>
+        <br/><br/>
+
+        <button> ENVIAR </button>
+        </form>
+
+        </section>
+
+
+        <!--<section id="cursoeprazos"><p id="cptitulo"> Suporte aos meus cursos </p><br>
+        <p class="cptexto"> Quanto tempo eu tenho para fazer os cursos?</p><br>
+        <p class="cptexto">O tempo do curso e indeterminado pois você pode comprar o curso e fazer quando quiser</p><br>
+        <p class="cptexto">Na compra do meu curso depois de quanto tempo e liberado para fazer? </p><br>
+        <p class="cptexto">O curso e liberado na mesma hora pôs a compra </p>
+        </section> -->
+
+
+        <!--<article>
+            <section id="section1">
+                <section id="section2">
+            <ul>
+                <input type="text" id="nome" name="nome" class="nome" placeholder="Digite seu nome">
+                <input type="text" id="cpf" name="nome" class="cpf" placeholder="Digite seu CPF">
+                <input type="text" id="sobrenome" class="sobrenome" placeholder="Digite seu sobre nome">
+            </ul>
+        </section>
+        <section id="section3">
+            <ul>
+                <input type="tel" id="telefone" name="telefone" class="tel" placeholder="Digite seu Telefone">
+                <input type="email" id="mail" name="mail" class="mail" placeholder="Digite seu E-mail">
+                <input type="text" id="instituicao" name="instituicao" class="instituicao" placeholder="Digite o nome da sua impresa ">
+            </ul>
+        </section>-->
+                <section id="duvida"><p id="dtexto"> E-mail: adm@ianes.com</p></section>
+                <!--<section id="nossasredes">-->
+                <p id="logoredes"><ion-icon name="logo-instagram"></ion-icon> @ianesadm</p><br/>
+                <p id="logoredes"><ion-icon name="logo-twitch"></ion-icon> ianeslive</p><br/>
+                <p id="logoredes"><ion-icon name="logo-facebook"></ion-icon> ianescursos</p><br/>
+                <p id="logoredes"><ion-icon name="logo-twitter"></ion-icon> ianescursos</p><!--</section>-->
+            <!-- </section> -->
+        <!--</article>-->
+    </main>
+
+    <!-- -------------------------------- Sessão Importação de blibliotecas -------------------------------- -->
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

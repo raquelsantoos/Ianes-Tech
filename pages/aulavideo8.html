@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> VÍdeo Aula 8 - CSS II</title>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../css/aulavideo8.css'>
+        <script defer src='../js/aulavideo.js'></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        
+        <header>
+            <section class="logo">
+                <img src="../img/logotipoM.png" alt="Logo">
+            </section>
+    
+            <section class="contentP">
+                <section class="userP">
+                    <input class="inputP" type="text" placeholder="Search">
+                </section>
+                <section class="menuP">
+                    <ion-icon name="search"></ion-icon>
+                </section>
+            </section>
+    
+            <section class="contentM">
+                <section class="userM">
+                    <section class="imgM">
+                        <img src="../img/programmer.png" alt="User_Imagem">
+                    </section>
+                    <p class="username">Ianes Tech</p>
+                </section>
+                <section class="menuM"></section>
+                <ul class="menu">
+                    <li onclick="home()"><a href="#"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+                    <li onclick="MeuPerfil()"><a href="#"><ion-icon name="person-outline"></ion-icon> Meu Perfil</a></li>
+                    <li onclick="cursos()"><a href="#"><ion-icon name="book-outline"></ion-icon> Cursos</a></li>
+                    <li onclick="contato()"><a href="#"><ion-icon name="call-outline"></ion-icon> Contato / Quem Somos</a></li>
+                    <li onclick="Ajuda()"><a href="#"><ion-icon name="help-outline"></ion-icon> Ajuda</a></li>
+                    <li onclick="logout()"><a href="#"><ion-icon name="log-out-outline"></ion-icon> Logout</a></li>
+                </ul>
+            </section>
+        </header>
+
+        <nav id="parray">
+
+            <p id="p3"> AULA 8 - CSS II </p> <!-- NOME DO CAPITULO -->
+
+        </nav>
+
+        <input type="checkbox" id="chec">
+        <label for="chec" class="checbtn">
+        <img src="../img/menu.png" id="sanduba" />
+        </label>    
+        <div id="truesanduba"> 
+        <ul id="menusan">
+        <li><a href="aula1.html" id="aulas" target="_blank" >ﾠﾠ • AULA 1 ﾠIntrodução</a></li>
+        <li><a href="aula2.html" id="aulas" target="_blank" >ﾠﾠ • AULA 2 ﾠMarcação</a></li>
+        <li><a href="aula3.html" id="aulas" target="_blank" >ﾠﾠ • AULA 3 ﾠTags Part I</a></li>
+        <li><a href="aula4.html" id="aulas" target="_blank" >ﾠﾠ • AULA 4 ﾠTags Part II</a></li>
+        <li><a href="aula5.html" id="aulas" target="_blank" >ﾠﾠ • AULA 5 ﾠTags Part II</a></li>
+        <li><a href="aula6.html" id="aulas" target="_blank" >ﾠﾠ • AULA 6 ﾠWireframe</a></li>
+        <li><a href="aula7.html" id="aulas" target="_blank" >ﾠﾠ • AULA 7 ﾠCSS I</a></li>
+        <li><a href="aula8.html" id="aulas" target="_blank" >ﾠﾠ • AULA 8 ﾠCSS II</a></li>
+        <li><a href="./feedback.html" target="_blank" id="aulas">ﾠﾠ • FEEDBACK </a></li>
+        <li><a href="./prova.html" target="_blank" id="aulas">ﾠﾠ • PROVA FINAL </a></li>
+        </ul>
+        </div>
+        
+
+        <main>
+            <br/><br/><br/><br/><br/><br/>
+            <aside id="aside1">
+                <a href="aula1.html" class="aulas" target="_blank" >ﾠﾠ • AULA 1 </a>
+                <p class="aulas"> ﾠIntrodução</p>
+                <br/>
+                <a href="aula2.html" class="aulas" target="_blank" >ﾠﾠ • AULA 2 </a>
+                <p class="aulas"> ﾠMarcação</p>
+                <br/>
+                <a href="aula3.html" class="aulas" target="_blank" >ﾠﾠ • AULA 3 </a>
+                <p class="aulas"> ﾠTags Part I</p>
+                <br/>
+                <a href="aula4.html" class="aulas" target="_blank" >ﾠﾠ • AULA 4 </a>
+                <p class="aulas"> ﾠTags Part II</p>
+                <br/>
+                <a href="aula5.html" class="aulas" target="_blank" >ﾠﾠ • AULA 5 </a>
+                <p class="aulas"> ﾠTags Part III</p>
+                <br/>
+                <a href="aula6.html" class="aulas" target="_blank" >ﾠﾠ • AULA 6 </a>
+                <p class="aulas"> ﾠWireframe</p>
+                <br/>
+                <a href="aula7.html" class="aulas" target="_blank" >ﾠﾠ • AULA 7 </a>
+                <p class="aulas"> ﾠCSS I</p>
+                <br/>
+                <a href="aula8.html" class="aulas" target="_blank" >ﾠﾠ • AULA 8 </a>
+                <p class="aulas"> ﾠCSS II</p>
+                <br/>
+                <a href="./feedback.html"  target="_blank" class="aulas">ﾠ • FEEDBACK </a>
+                <br/>
+                <a href="./prova.html"  target="_blank" class="aulas">ﾠ • PROVA FINAL </a>
+            </aside>
+            <article>
+                <section id="video"> <iframe width="100%" height="100%" id="aula" src="https://www.youtube.com/embed/fzyab4P2pn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </section>
+            </article>
+
+            <div id="aside2">
+                <section id="aula1" onclick="return changeSrc(this.id)" src="https://www.youtube.com/embed/8dPpZsC6Vg8"> <img class="video2" src="../img/youtube.png " title="Vídeo Aula 1">  </section>
+                <br/>
+                <section id="aula2" onclick="return changeSrc(this.id)" src="https://www.youtube.com/embed/62dYzVao-yk"> <img class="video2" src="../img/youtube (4).png " title="Vídeo Aula 2">  </section>
+                <br/>
+                <section id="aula3" onclick="return changeSrc(this.id)" src="https://www.youtube.com/embed/7pqp3IKyC0s"> <img class="video2" src="../img/youtube (3).png " title="Vídeo Aula 3">  </section> 
+                <br/>
+                <section id="aula4" onclick="return changeSrc(this.id)" src="https://www.youtube.com/embed/l-KFuLiM3kY"> <img class="video2" src="../img/youtube (2).png " title="Vídeo Aula 4">  </section> 
+                <br/>
+                <section id="aula5" onclick="return changeSrc(this.id)" src="https://www.youtube.com/embed/JlE0pzESf5g"> <img class="video2" src="../img/youtube (1).png " title="Vídeo Aula 5">  </section> 
+                <br/>
+                <section id="aula6" onclick="return changeSrc(this.id)" src="https://www.youtube.com/embed/ZCxNUKR6UI4"> <img class="video2" src="../img/logotipo-do-youtube.png" title="Vídeo Aula 6">  </section> 
+                <br/>
+                <section id="aula7" onclick="return changeSrc(this.id)" src="https://www.youtube.com/embed/byqhpuVpvEI"> <img class="video2" src="../img/video.png" title="Vídeo Aula 7">  </section> 
+            </div>
+
+        </main>
+                    <!-- -------------------------------- Sessão Importação de blibliotecas -------------------------------- -->
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

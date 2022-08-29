@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | IANES</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script defer src="../js/menu.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="../img/logotipoM.png" alt="Logo">
+        </section>
+
+        <section class="contentP">
+            <section class="userP">
+                <input class="inputP" type="text" placeholder="Search">
+            </section>
+            <section class="menuP">
+                <ion-icon name="search"></ion-icon>
+            </section>
+        </section>
+
+        <section class="contentM">
+            <section class="userM">
+                <section class="imgM">
+                    <img src="../img/programmer.png" alt="User_Imagem">
+                </section>
+                <p class="username">Ianes Tech</p>
+            </section>
+            <section class="menuM"></section>
+            <ul class="menu">
+                <li onclick="home()"><a href="#"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+                <li onclick="MeuPerfil()"><a class="PerfilOFF" href="#"><ion-icon name="person-outline"></ion-icon> Meu Perfil</a></li>
+                <li><a href="#MeusCursos"><ion-icon name="book-outline"></ion-icon> Cursos</a></li>
+                <li><a href="#Contato/QuemSomos"><ion-icon name="call-outline"></ion-icon> Contato / Quem Somos</a></li>
+                <li onclick="Ajuda()"><a href="#"><ion-icon name="help-outline"></ion-icon> Ajuda</a></li>
+                <li onclick="logout()"><a href="#"><ion-icon name="log-out-outline"></ion-icon> Logout</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+		<section class="slide">
+			<section class="slides">
+				<section id="atual" class="imagens">
+					<img src="../img/1.jpg" alt="">
+				</section>
+				<section class="imagens">
+					<img src="../img/2.png" alt="">
+				</section>
+				<section class="imagens">
+					<img src="../img/3.png" alt="">
+				</section>
+				<section class="imagens">
+					<img src="../img/4.png" alt="">
+				</section>
+			</section>
+			<section class="navigation">
+			</section>
+		</section>
+    </main>
+	<a name="MeusCursos"></a>
+	
+	<section class="MeusCursos">
+		<section class="curso1">
+			<h3>Curso introdutório a <br/> HTML5 e CSS3</h3>
+			<img src="../img/banner.jpg" alt="Html">
+			<p>
+				HTML5: Listas, imagens, links, nav, article, section, aside.
+				<br/>
+				<br/>
+				CSS3: Cores, modelo caixa, elementos flutuantes, posicionamento, formatando links.
+			</p>
+			<button class="pagCurso pagCurso1" onclick="botao()">Iniciar</button>
+		</section>
+		<section class="curso2">
+			<h3>Curso avançado em Web Developer</h3>
+			<img src="../img/banner2.png" alt="Html">
+			<p>Criar aplicações WEB: Do front ao back-end e banco de dados com HTML5, CSS3, PHP 7, MySQL, BootStrap 4, JavaScript, JQuery, API.</p>
+			<button class="pagCurso">Indisponível</button>
+		</section>
+		<section class="curso3">
+			<h3>Curso avançado em Python</h3>
+			<img src="../img/python.png" alt="Html">
+			<p>Criar programas para usá-los na web com frameworks como Django e Flask ou ainda dar seus primeiros passos para chegar à Data Science e Machine Learning.</p>
+			<button class="pagCurso">Indisponível</button>
+		</section>
+	</section>
+
+    <footer>
+		<section class="main-content">
+			<section class="left box">
+				<h2> Sobre nós</h2>
+				<section class="content">
+					<p>A Ianes Tech é uma empresa que atual no ramo de tecnologia a muito tempo, mais especifico ensinando pessoas com os conhecimentos dos profissionais que nela atuam. Sendo uma empresa especialista na programação desde Front-End até o Back-End, e os canais necessários como frameworks, banco de dados, linguagens próprias etc.</p>
+				
+					<section class="social">
+						<a href="#"><span class="fab fa-facebook-f"></span></a>
+						<a href="#"><span class="fab fa-twitter"></span></a>
+						<a href="#"><span class="fab fa-instagram"></span></a>
+						<a href="#"><span class="fab fa-youtube"></span></a>
+					</section>
+				</section>
+			</section>
+			<section class="center box">
+				<h2>Endereço</h2>
+				<section class="content">
+					<section class="place">
+						<span class="fas fa-map-marker"></span>
+						<span class="text">Av.Afonso pena, Belo Horizonte - MG</span>
+					</section>
+
+					<section class="phone">
+						<span class="fas fas fa-phone-alt"></span>
+						<span class="text">+55 (31) 99675-2666</span>
+					</section>
+
+					<section class="email">
+						<span class="fas fa-envelope"></span>
+						<span class="text">adm@ianes.com</span>
+					</section>
+				</section>
+			</section>
+			<section class="right box">
+				<h2>Contato</h2>
+				<section class="content">
+					<form action="#">
+						<section class="email">
+							<section class="text">Email *</section>
+							<input type="email" required>
+						</section>
+						<section class="msg">
+							<section class="text">Mensagem *</section>
+							<textarea rows="2" cols="25" required></textarea>
+						</section>
+						<section class="btn">
+							<button type="submit">Enviar</button>
+						</section>
+					</form>
+				</section>
+			</section>
+		</section><!--main-content-->
+		<section class="bottom">
+			<section class="center">
+				<span class="credit">Criado por <a href="#">Senai CTTI </a></span>
+				<span class="far fa-copyright"> 2022 Todos os diteitos reservados</span>
+			</section>
+		</section>
+        <a name="Contato/QuemSomos"></a>
+	</footer>
+
+<!-- -------------------------------- Sessão Importação de blibliotecas -------------------------------- -->
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>

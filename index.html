@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | IANES</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <section class="content col-4">
+        <header>
+            <img src="./img/logotipo.png" alt="Logo">
+        </header>
+        <section class="login">
+            <h3> Acesso </h3>
+
+            <form action="#">
+                <input type="text" class="nome" id="nome" name="nome" placeholder=" Username"/>
+                <input type="password" class="senha" id="senha" name="senha" placeholder=" Senha"/>
+            </form>
+
+            <button class="login_button" onclick="verifica_login()" disabled>PRÓXIMO</button>
+            <h5 class="msg1"></h5>
+        </section>
+        <section class="login_criar">
+            <h3> Criar conta </h3>
+
+            <form action="#">
+                <input type="text" class="_nome" id="_nome" name="_nome" placeholder=" Digite seu nome completo"/>
+                <input type="email" class="_email" id="_email" name="_email" placeholder=" Digite seu E-mail"/>
+                <input type="tel" class="_telefone" id="_telefone" name="_telefone" placeholder=" Digite seu Telefone" maxlength="15"/>
+                <input type="text" class="_cpf" id="_cpf" name="_cpf" placeholder=" Digite seu CPF" maxlength="14"/>
+                <input type="password" class="_senha" id="_senha" name="_senha" placeholder=" Digite uma senha (mínimo 4 caracteres)" minlength="4"/>
+                <input type="password" class="conf_senha" id="conf_senha" name="conf_senha" placeholder=" Digite novamente sua senha" minlength="4"/>
+            </form>
+
+            <button class="Criarlogin_button" onclick="Criar_Conta()">CRIAR</button>
+        </section>
+        <section class="esquerda">
+            <button class="Tela_login" onclick="TelaFazerLogin()">Fazer Login</button>
+            <p class="registrarse">Não possui uma conta?<button class="Tela_CriarConta" onclick="TelaCriarConta()">Registrar-se.</button></p>
+            <button class="Sem_login" onclick="SemLogin()">Acessar sem login</button>
+        </section>
+    </section>
+</body>
+</html>
